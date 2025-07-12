@@ -375,3 +375,21 @@ h3 {
     font-size: 1.3rem;
   }
 }
+.nav-links {
+  position: fixed;
+  top: 65px;
+  left: 0; /* ← Affiche à gauche */
+  background: white;
+  height: calc(100vh - 65px);
+  width: 200px;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* ombre inversée */
+  transform: translateX(-100%); /* ← Cache à gauche au début */
+  transition: transform 0.3s ease;
+}
+
+.nav-links.show {
+  transform: translateX(0); /* ← Fait apparaître */
+}
