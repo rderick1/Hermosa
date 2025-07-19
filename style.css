@@ -48,10 +48,11 @@ header {
 
 nav {
   position: relative;
-  padding-left: 450px;
+  padding-left: 1160px;
 }
 
 .nav-links {
+  width: 700px;
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -376,16 +377,6 @@ h3 {
   }
 }
 .nav-links {
-  position: fixed;
-  top: 65px;
-  left: 0; /* ← Affiche à gauche */
-  background: white;
-  height: calc(100vh - 65px);
-  width: 200px;
-  flex-direction: column;
-  padding: 2rem 1rem;
-  gap: 1.5rem;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* ombre inversée */
   transform: translateX(-100%); /* ← Cache à gauche au début */
   transition: transform 0.3s ease;
 }
